@@ -60,6 +60,11 @@ export class ProductRepository {
       };
     }
 
-    await this.db.delete(products).where(eq(products.id, id));
+    await this.db
+      .update(products)
+      .set({
+        deletedAt: new Date(),
+      })
+      .where(eq(products.id, id));
   }
 }
