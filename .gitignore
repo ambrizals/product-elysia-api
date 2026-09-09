@@ -1,1 +1,17 @@
+# dependencies
 node_modules
+
+# testing / coverage
+coverage
+
+# production build
+dist
+
+# OS / editor
+.DS_Store
+
+# Local env files — the committed files (.env.template / .env.test) are kept,
+# local overrides and real secrets are ignored.
+.env
+.env.local
+.env.*.local
