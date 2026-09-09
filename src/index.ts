@@ -2,7 +2,7 @@ import { Elysia, t } from "elysia";
 import { db } from "./database/client";
 import { ProductRepository } from "./repositories/product.repo";
 
-const app = new Elysia()
+export const app = new Elysia()
   .derive(() => {
     const repository = new ProductRepository(db);
 

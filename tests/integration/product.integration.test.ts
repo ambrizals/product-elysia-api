@@ -1,7 +1,7 @@
 import { beforeAll, beforeEach, describe, expect, it } from "bun:test";
 import { eq } from "drizzle-orm";
 import { migrate } from "drizzle-orm/bun-sql/migrator";
-import { app } from "../../src/app";
+import { app } from "../../src";
 import { ENV_DB } from "../../src/config/db";
 import { db } from "../../src/database/client";
 import { products } from "../../src/database/schema";
